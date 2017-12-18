@@ -1,0 +1,27 @@
+# Mac Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# IDE
+.idea
+
+# Logs
+logs
+*.log
+
+# Package managers
+node_modules
+bower_components
+
+# Caches
+.npm
+.eslintcache
+.sass-cache
