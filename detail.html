@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <title>Marvel Character Search</title>
+</head>
+<body>
+    <div class="container">
+        <img id="logo"
+             src="/assets/images/marvel-logo.svg"
+             width="200"
+             height="76"
+             alt="Marvel">
+
+        <div id="searchbox">
+            <form id="search-form" method="#">
+                <label class="sr-only" for="input-name">Name</label>
+                <div class="input-group mb-2 mb-sm-0">
+                    <input type="text"
+                           class="form-control"
+                           id="input-name"
+                           value="Spider-Man">
+                    <div id="input-name-addon"
+                         class="input-group-addon">search</div>
+                </div>
+            </form>
+        </div>
+
+        <div id="result" class="character text-center">
+            <ul class="character-list">
+                <li class="list-item" data-id="1009610">
+
+                    <h2 class="name">Spider-Man</h2>
+
+                    <div class="thumbnail">
+                        <img src="http://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b.jpg"
+                             width="250"
+                             height=250">
+                    </div>
+                    <div class="description">
+                        Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.
+                    </div>
+
+                    <br>
+
+                    <h2 class="name">Comics</h2>
+
+                    <ul class="flat-list">
+                        <li class="list-item">Spider-Man: 101 Ways to End the Clone Saga (1997) #1</li>
+                        <li class="list-item">A Year of Marvels (Trade Paperback)</li>
+                        <li class="list-item">A Year of Marvels: April Infinite Comic (2016) #1</li>
+                        <li class="list-item">A+X (2012) #4</li>
+                        <li class="list-item">Actor Presents Spider-Man and the Incredible Hulk (2003) #1</li>
+                        <li class="list-item text-muted">... more</li>
+                    </ul>
+
+                    <br>
+
+                    <h2 class="name">Series</h2>
+
+                    <ul class="flat-list">
+                        <li class="list-item">A Year of Marvels (2017)</li>
+                        <li class="list-item">A Year of Marvels: April Infinite Comic (2016 - Present)</li>
+                        <li class="list-item">A+X (2012 - Present)</li>
+                        <li class="list-item">Actor Presents Spider-Man and the Incredible Hulk (2003)</li>
+                        <li class="list-item">Age of Heroes (2010)</li>
+                        <li class="list-item text-muted">... more</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="attribution" class="text-center">
+            <a href="http://marvel.com">Data provided by Marvel. © 2017 MARVEL</a>
+        </div>
+    </div><!-- /container -->
+
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

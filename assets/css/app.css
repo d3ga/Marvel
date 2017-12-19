@@ -1,0 +1,121 @@
+body {
+    background:
+            radial-gradient(black 15%, transparent 16%) 0 0,
+            radial-gradient(black 15%, transparent 16%) 8px 8px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+.red {
+    color: #DC1405;
+}
+
+.large {
+    font-size: 1.5rem;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+h2.name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.6);
+    margin: 0 0 1rem 0;
+}
+
+#logo {
+    display: block;
+    margin: 3.5rem auto;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+}
+
+#searchbox {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+}
+
+#input-name {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255,255,255,.5);
+    color: #000;
+    -webkit-box-shadow: 0 0 5px 0 rgba(255,255,255,0.75);
+    -moz-box-shadow: 0 0 5px 0 rgba(255,255,255,0.75);
+    box-shadow: 0 0 3px 0 rgba(255,255,255,0.75);
+}
+
+#input-name-addon {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.character-list {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 640px;
+    list-style: none;
+}
+    .character-list .list-item {
+        margin: 0 0 1.5rem 0;
+        padding: 1rem;
+        list-style-type: none;
+        border-radius: 6px;
+    }
+
+    .character-list.switch .list-item:hover {
+        background: rgba(0,0,0,0.3);
+        cursor: pointer;
+    }
+
+    .character-list .name {
+        font-size: 1.5rem;
+        color: rgba(255,255,255,0.8);
+        display: inline-block;
+    }
+
+    .character-list .name:hover {
+        text-decoration: underline;
+    }
+
+    .character-list .thumbnail {
+        padding: 1rem 0;
+    }
+        .character-list .thumbnail img {
+            max-width: 250px;
+            border-radius: 6px;
+        }
+
+    .character-list .description {
+        font-size: 1.25rem;
+        color: #c0c0c0;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1rem 0;
+        text-align :justify;
+    }
+
+.flat-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+    .flat-list .list-item {
+        color: rgba(255,255,255,0.8);
+        font-size: 1.25rem;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+#attribution {
+    margin: 1.5rem 0;
+}
+    #attribution a {
+        color: rgba(255, 255, 255, 0.6);
+    }

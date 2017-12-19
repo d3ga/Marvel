@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <title>Marvel Character Search</title>
+</head>
+<body>
+    <div class="container">
+        <img id="logo"
+             src="/assets/images/marvel-logo.svg"
+             width="200"
+             height="76"
+             alt="Marvel">
+
+        <div id="searchbox">
+            <form id="search-form" method="#">
+                <label class="sr-only" for="input-name">Name</label>
+                <div class="input-group mb-2 mb-sm-0">
+                    <input type="text"
+                           class="form-control"
+                           id="input-name"
+                           value="Spider-Man">
+                    <div id="input-name-addon"
+                         class="input-group-addon">search</div>
+                </div>
+            </form>
+        </div>
+
+        <div id="results" class="text-center">
+            <ul class="character-list switch">
+                <li class="list-item" data-id="1009610">
+                    <div class="name">Spider-Man</div>
+                    <div class="thumbnail">
+                        <img src="http://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b.jpg"
+                             width="250"
+                             height=250">
+                    </div>
+                    <div class="description">
+                        Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.
+                    </div>
+                </li>
+                <li class="list-item" data-id="1011054">
+                    <div class="name">Spider-Man (1602)</div>
+                    <div class="thumbnail">
+                        <img src="http://i.annihil.us/u/prod/marvel/i/mg/e/03/5317713c9e746.jpg"
+                             width="250"
+                             height=250">
+                    </div>
+                    <div class="description text-center text-muted">
+                        - no description -
+                    </div>
+                </li>
+                <li class="list-item" data-id="1014873">
+                    <div class="name">Spider-Man (2099)</div>
+                    <div class="thumbnail">
+                        <img src="http://i.annihil.us/u/prod/marvel/i/mg/8/c0/520d1ad3e543f.jpg"
+                             width="250"
+                             height=250">
+                    </div>
+                    <div class="description text-center text-muted">
+                        - no description -
+                    </div>
+                </li>
+            </ul>
+        </div><!-- /result -->
+
+        <div id="attribution" class="text-center">
+            <a href="http://marvel.com">Data provided by Marvel. © 2017 MARVEL</a>
+        </div>
+    </div><!-- /container -->
+
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

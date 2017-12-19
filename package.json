@@ -1,0 +1,16 @@
+{
+  "name": "marvel-character-search",
+  "description": "In this exercise, students will write a JavaScript class that is used to connect to the Marvel API and look for a character by name.",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1"
+  },
+  "scripts": {
+    "setup": "npm install && npm run mkdir && npm run copy",
+    "mkdir": "mkdir -p ./assets/vendor/bootstrap && mkdir -p ./assets/vendor/jquery",
+    "copy": "cp -R ./node_modules/bootstrap/dist/ ./assets/vendor/bootstrap/ && cp -R ./node_modules/jquery/dist/ ./assets/vendor/jquery/"
+  },
+  "dependencies": {}
+}
