@@ -10,7 +10,7 @@
   "scripts": {
     "setup": "npm install && npm run mkdir && npm run copy",
     "mkdir": "mkdir -p ./assets/vendor/bootstrap && mkdir -p ./assets/vendor/jquery",
-    "copy": "cp -R ./node_modules/bootstrap/dist/ ./assets/vendor/bootstrap/ && cp -R ./node_modules/jquery/dist/ ./assets/vendor/jquery/"
+    "copy": "cp -R ./node_modules/bootstrap/dist/* ./assets/vendor/bootstrap/ && cp -R ./node_modules/jquery/dist/* ./assets/vendor/jquery/"
   },
   "dependencies": {}
 }
