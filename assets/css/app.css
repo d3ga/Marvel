@@ -79,10 +79,6 @@ h2.name {
         display: inline-block;
     }
 
-    .character-list .name:hover {
-        text-decoration: underline;
-    }
-
     .character-list .thumbnail {
         padding: 1rem 0;
     }
