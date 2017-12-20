@@ -115,3 +115,7 @@ h2.name {
     #attribution a {
         color: rgba(255, 255, 255, 0.6);
     }
+
+.hidden {
+  display: none;
+}
