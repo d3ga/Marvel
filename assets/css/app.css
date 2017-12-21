@@ -60,20 +60,23 @@ h2.name {
     margin: 0 auto;
     max-width: 640px;
     list-style: none;
+    background: rgba(0,0,0,0.3);
 }
     .character-list .list-item {
-        margin: 0 0 1.5rem 0;
-        padding: 1rem;
+        margin-bottom: 0.5rem;
+        padding: 0;
         list-style-type: none;
         border-radius: 6px;
     }
-
+    /*
     .character-list.switch .list-item:hover {
         background: rgba(0,0,0,0.3);
         cursor: pointer;
     }
-
+    */
     .character-list .name {
+      font-weight: bold;
+        margin-top: 3rem;
         font-size: 1.5rem;
         color: rgba(255,255,255,0.8);
         display: inline-block;
@@ -95,6 +98,20 @@ h2.name {
         padding: 1rem 0;
         text-align :justify;
     }
+
+      .title-comics {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgba(255,255,255,0.6);
+        margin: 0 0 2rem 0;
+
+      }
+
+      .title-comics:hover {
+        color: rgba(255,255,255,0.9);
+        text-decoration: none;
+      }
 
 .flat-list {
     margin: 0;
@@ -118,4 +135,15 @@ h2.name {
 
 .hidden {
   display: none;
+}
+
+.comics {
+  margin: 0 0 1rem 0;
+
+}
+
+
+
+.comics-list {
+  padding-left: 0;
 }

@@ -1,5 +1,5 @@
 // focus the text field on load
-$('#input-name').focus();
+$('#input-name').focus()
 
 $('#search-form').submit((e) => {
     e.preventDefault()
@@ -35,8 +35,9 @@ class marvelAPI {
 
     $.getJSON(`${this.apiUrl}${endpoint}`, apiParams)
       .done((data) => {
+        // console.log('getJSON', data)
         callback(data)
-        console.log(data)
+
       })
       .fail((response) => {
         callback(null)
@@ -84,7 +85,7 @@ class CharacterSearch {
   registerEvents() {
     this.elements.form.on('submit', (e) => {
       e.preventDefault()
-      const name = this.elements.input.val().trim();
+      const name = this.elements.input.val().trim()
 
       this.marvelAPI.searchByName(
         name,
@@ -92,8 +93,10 @@ class CharacterSearch {
           if (data.data.results.length !== 0) {
             this.showResults(data.data.results)
           } else {
-            this.marvelAPI.nameStartsWith(name, (data) => {
-              this.showResults(data.data.results.characterList)
+            this.marvelAPI.nameStartsWith(
+              name,
+              (data) => {
+              this.showResults(data.data.results)
             })
           }
         }
@@ -101,17 +104,17 @@ class CharacterSearch {
     })
   }
 
-  showResults(data) {
+  showResults(results) {
     this.elements.characterList.html('')
+    if (results.length === 0) {
 
-
-    if (data.length === 0) {
       this.showError('Character not found in database!')
+
     } else {
       $('#error').remove()
-      data.forEach((item) => {
+      results.forEach((item) => {
 
-        let comics = `<ul id="comics">`
+        let comics = `<ul class="comics-list">`
 
         item.comics.items.forEach((comic) => {
           comics+= `<li class="list-item">${comic.name}</li>`
@@ -131,13 +134,16 @@ class CharacterSearch {
                   ${item.description}
               </div>
 
+              <a href="#title-comics" class="title-comics">Comics</a>
+
               <div class="comics text-center text-muted hidden">
                   ${comics}
               </div>
           </li>
         `)
      })
-     $('.character-list .list-item').on('click', (e) => {
+
+     $('.list-item').on('click', (e) => {
        $(e.currentTarget).find('.comics').toggleClass('hidden')
      })
     }
