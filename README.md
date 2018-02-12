@@ -44,4 +44,4 @@ The easiest way to run a local server for the exercise is to use the node [live-
 
 To setup all needed JS and CSS for this project, run the following command in your terminal (inside of the project folder):
 
-```npm run setup```
+```npm run setup```# Marvel_API
