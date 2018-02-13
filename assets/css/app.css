@@ -1,11 +1,13 @@
 body {
-    background:
-            radial-gradient(black 15%, transparent 16%) 0 0,
-            radial-gradient(black 15%, transparent 16%) 8px 8px,
-            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#282828;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#afafaf;
     background-size:16px 16px;
+}
+
+img {
+    -webkit-box-shadow: -10px 10px 50px #636363;
+    -moz-box-shadow: -10px 10px 50px #636363;
+    box-shadow: -10px 10px 50px #636363;
 }
 
 .red {
@@ -31,9 +33,9 @@ h2.name {
 #logo {
     display: block;
     margin: 3.5rem auto;
-    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 10px 50px #636363;
+    -moz-box-shadow: -10px 10px 50px #636363;
+    box-shadow: -10px 10px 50px #636363;
 }
 
 #searchbox {
@@ -51,8 +53,22 @@ h2.name {
     box-shadow: 0 0 3px 0 rgba(255,255,255,0.75);
 }
 
-#input-name-addon {
-    background-color: rgba(255, 255, 255, 0.8);
+.input-group {
+    -webkit-box-shadow: -10px 10px 50px #636363;
+    -moz-box-shadow: -10px 10px 50px #636363;
+    box-shadow: -10px 10px 50px #636363;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 .character-list {
@@ -60,58 +76,58 @@ h2.name {
     margin: 0 auto;
     max-width: 640px;
     list-style: none;
-    background: rgba(0,0,0,0.3);
+    background: rgb(216, 216, 216);
+    -webkit-box-shadow: -10px 10px 50px #636363;
+    -moz-box-shadow: -10px 10px 50px #636363;
+    box-shadow: -10px 10px 50px #636363;
 }
-    .character-list .list-item {
-        margin-bottom: 0.5rem;
-        padding: 0;
-        list-style-type: none;
-        border-radius: 6px;
-    }
-    /*
-    .character-list.switch .list-item:hover {
-        background: rgba(0,0,0,0.3);
-        cursor: pointer;
-    }
-    */
-    .character-list .name {
-      font-weight: bold;
-        margin-top: 3rem;
-        font-size: 1.5rem;
-        color: rgba(255,255,255,0.8);
-        display: inline-block;
-    }
 
-    .character-list .thumbnail {
-        padding: 1rem 0;
-    }
-        .character-list .thumbnail img {
-            max-width: 250px;
-            border-radius: 6px;
-        }
+.character-list .list-item {
+    margin-bottom: 0.5rem;
+    padding: 0;
+    list-style-type: none;
+    color: #636363;
+    font-size: 0.8rem;
+}
 
-    .character-list .description {
-        font-size: 1.25rem;
-        color: #c0c0c0;
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 1rem 0;
-        text-align :justify;
-    }
+.character-list .name {
+    font-weight: bold;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: rgba(58, 58, 58, 0.8);
+    display: inline-block;
+}
 
-      .title-comics {
-        font-size: 1.4rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: rgba(255,255,255,0.6);
-        margin: 0 0 2rem 0;
+.character-list .thumbnail {
+    padding: 1rem 0;
+}
 
-      }
+.character-list .thumbnail img {
+    max-width: 250px;
+}
 
-      .title-comics:hover {
-        color: rgba(255,255,255,0.9);
-        text-decoration: none;
-      }
+.character-list .description {
+    font-size: 1.25rem;
+    color: #636363;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align :justify;
+}
+
+.title-comics {
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 1.5;
+color:rgba(16, 16, 16, 0.8);
+margin: 0 0 2rem 0;
+
+}
+
+.title-comics:hover {
+color: rgba(128, 128, 128, 0.9);
+text-decoration: none;
+}
 
 .flat-list {
     margin: 0;
@@ -141,8 +157,6 @@ h2.name {
   margin: 0 0 1rem 0;
 
 }
-
-
 
 .comics-list {
   padding-left: 0;

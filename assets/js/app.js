@@ -76,7 +76,8 @@ class CharacterSearch {
       'form': $('#search-form'),
       'input': $('#search-input'),
       'results': $('#results'),
-      'characterList': $('.character-list')
+      'characterList': $('.character-list'),
+      'searchButton' : $('.btn')
     }
 
     this.registerEvents()
@@ -130,13 +131,13 @@ class CharacterSearch {
                       width="250"
                       height="250">
               </div>
-              <div class="description text-center text-muted">
+              <div class="description text-center">
                   ${item.description}
               </div>
 
               <a href="#title-comics" class="title-comics">Comics</a>
 
-              <div class="comics text-center text-muted hidden">
+              <div class="comics text-center hidden">
                   ${comics}
               </div>
           </li>
